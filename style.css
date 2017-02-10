@@ -1,0 +1,67 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main-contain {
+  background-image: url('./img/main-bg.jpeg');
+  background-size: cover;
+  /*height: 750px;
+  weight: 775px;*/
+  height: 100vh;
+  width: 100vw;
+  color: white;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+  .nav-bar ul {
+  /*color: white;*/
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  padding: 45px;
+  font-size: 25px;
+  }
+
+  @media (max-width: 600px) {
+    .nav-bar {
+      display: none;
+    }
+  }
+
+  .alt-nav {
+    display: inline-flex;
+    justify-content: space-between;
+    padding: 5px;
+  }
+
+  @media (min-width: 599px) {
+    .alt-nav {
+      display: none;
+    }
+  }
+
+body {
+  position: relative;
+  }
+
+.title-contain {
+  display: inline-block;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /*color: white;
+  Still need some help on centering...*/
+}
+
+.first-word {
+  font-size: 85px;
+}
+
+.second-word {
+  font-size: 20px;
+}
